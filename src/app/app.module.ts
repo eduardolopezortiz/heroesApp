@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { AgregarComponent } from './heroes/pages/agregar/agregar.component';
@@ -14,7 +15,8 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
     ErrorPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
